@@ -28,7 +28,7 @@
           <article *ngIf="errorMessage" class="message is-danger is-small">
             <div class="message-header">
               <p>Error</p>
-              <button class="delete" aria-label="delete" (click)="showErrorMessage=false;"></button>
+              <button class="delete" aria-label="delete" (click)="errorMessage=null;"></button>
             </div>
             <div class="message-body">
               {{errorMessage}}
