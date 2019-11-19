@@ -12,20 +12,20 @@ import { catchError } from 'rxjs/operators';
 })
 export class AppComponent {
   private DEFAULT_DISPLAY_VALUE = 'No file chosen';
-  title = 'fileUpload';
   fileName: string;
-  displayFileName = this.DEFAULT_DISPLAY_VALUE;
+  displayFileName: string;
   name: string;
   file: any;
   imageUrl: any;
   previewUrl: any;
   fileToUpload: File;
-  uploadResponse = { status: '', message: '', filePath: '' };
   showSuccessMessage: boolean;
   errorMessage: boolean;
   progress: number;
 
-  constructor(private uploadService: UploadService, private sanitizer: DomSanitizer) {}
+  constructor(private uploadService: UploadService, private sanitizer: DomSanitizer) {
+    this.displayFileName = this.DEFAULT_DISPLAY_VALUE;
+  }
 
   private resetForm() {
     this.displayFileName = this.DEFAULT_DISPLAY_VALUE;
