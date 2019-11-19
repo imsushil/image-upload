@@ -53,6 +53,7 @@ export class AppComponent {
       this.hideErrorMessage();
       f.resetForm();
       this.resetForm();
+      this.fileName = null;
     });
   }
 
