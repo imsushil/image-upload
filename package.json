@@ -13,7 +13,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "heroku-postbuild": "ng build --prod",
-    "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript"
+    "preinstall": "npm install -g @angular-devkit/build-angular @angular/cli @angular/compiler-cli typescript"
   },
   "private": true,
   "dependencies": {
